@@ -1,0 +1,108 @@
+<!-- Exercice 1 -->
+<html>
+	<form>
+		<label for="Nom">Votre nom: </label>
+		<input type="text" name="Nom" placeholder="Tapez voptre nom ici" id="Nom"><br/>
+		<br/>
+		<label for="ISN">L'option ISN, c'est génial: </label>
+		<input type="text" name="ISN" size="3" value="Oui" id="ISN"><br/>
+		<br/>
+		<label for="Secret">Votre petit secret c'est: </label>
+		<input type="password" name="Secret" value="jaimelesnsi" id="Secret">
+	</form>
+<br>________________________________________________________________________________________
+</html>
+
+<!-- Exercice 2 -->
+<html>
+	<form>
+		<label for="description">Racontez vos vacances : </label><br> 
+		<textarea name="description" id="description" rows="10" cols="40" type="text">
+J'ai fait un voyage en Angleterre...
+		</textarea>
+	</form>
+<br>________________________________________________________________________________________
+</html>
+
+<!-- Exercice 3 -->
+<html>
+	<p><B><U>Cochez vos franchises cinématographiques préférées:</U></B></p>
+	<form>
+		<input type="checkbox" name="James" id="James" checked="yes">
+		<label for="James">James Bond.</label><br>
+		<input type="checkbox" name="SW" id="SW">
+		<label for="SW">Star Wars.</label><br>
+		<input type="checkbox" name="Avengers" id="Avengers">
+		<label for="Avengers">Avengers.</label><br>
+		<input type="checkbox" name="MI" id="MI" checked="yes">
+		<label for="MI">Mission impossible.</label>		
+	</form>
+<br>________________________________________________________________________________________
+</html>
+
+<!-- Exercice 4 -->
+<html>
+<form action="traitement.php" method="post">
+Dans quelle classe &ecirc;tes-vous ?<br>
+<input type="radio" name="Classe" value="Seconde" id="Seconde">
+<label for="Seconde">Seconde</label>.<br>
+<input type="radio" name="Classe" value="Première" id="Première">
+<label for="Première">Premi&egrave;re</label>.<br>
+<input type="radio" name="Classe" value="Terminale" id="Terminale">
+<label for="Terminale">Terminale</label>.<br>
+<br>
+Quel est votre professeur de NSI ?<br>
+<input type="radio" name="Prof" value="Lagadec" id="Lagadec">
+<label for="Lagadec">M. Lagadec</label>.<br>
+<input type="radio" name="Prof" value="Picard" id="Picard">
+<label for="Picard">M. Picard</label>.<br>
+<input type="radio" name="Prof" value="Bougé" id="Bougé"> <label for="Bougé">Mme Bougé</label>.
+</form>
+<br>________________________________________________________________________________________<br>
+</html>
+
+<!-- Exercice 5 -->
+<html>
+<label for="Prof">Quel est votre professeur de NSI ?</label><br>
+<Select name="Prof" id="Prof">
+<option value="Lagadec">M. Lagadec</option>
+<option value="Picard">M. Picard</option>
+<option value="Bougé">Mme Bougé</option>
+</select>
+<br>________________________________________________________________________________________
+</html>
+
+<!-- Exercice 5 -->
+<html>
+	<form>
+	<fieldset>
+		<fieldset>
+			<legend>Etat civil</legend>
+				<label for="Nom2">Nom: </label>
+				<input type="text" name="Nom2" id="Nom2"><br/>
+				<label for="Prénom">Prénom: </label>
+				<input type="text" name="Prénom" id="Prénom"><br/>
+				<label for="Age">Age: </label>
+				<input type="number" name="Age" id="Age" max="99"><br/>
+		</fieldset>
+		<fieldset>
+			<legend>Scolarité</legend>
+			<label for="Classe">Classe:</label>
+				<Select name="Classe" id="Classe">
+				<option value="Seconde">Seconde</option>
+				<option value="Première">Première</option>
+				<option value="Terminale">Terminale</option>
+			Spécialité abandonnée<br>
+			<input type="radio" name="Prof" value="Lagadec" id="Lagadec">
+			<label for="Lagadec">M. Lagadec</label>.<br>
+			<input type="radio" name="Prof" value="Picard" id="Picard">
+			<label for="Picard">M. Picard</label>.<br>
+			<input type="radio" name="Prof" value="Bougé" id="Bougé"> <label for="Bougé">Mme Bougé</label>.
+		</fieldset>
+		<fieldset>
+			<legend>Orientation</legend>
+			<!-- insérer les champs ici -->
+		</fieldset>
+	</fieldset>
+	</form>
+</html>
