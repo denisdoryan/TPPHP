@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<form action="http://localhost:8080/doryan/traitement.php" method="post">
+	<fieldset>
+		<fieldset>
+			<legend>Etat civil</legend>
+				<label for="Nom2">Nom: </label>
+				<input type="text" name="Nom2" id="Nom2"><br/>
+				<label for="Prenom">Prénom: </label>
+				<input type="text" name="Prenom" id="Prenom"><br/>
+				<label for="Age">Age: </label>
+				<input type="number" name="Age" id="Age" min="0" max="99"><br/>
+		</fieldset>
+		<fieldset>
+			<legend>Scolarité</legend>
+			<label for="Classe"><B>Classe:</B></label>
+				<Select name="Classe" id="Classe">
+				<option value="Seconde">Seconde</option>
+				<option value="Première">Première</option>
+				<option value="Terminale">Terminale</option>
+				</Select>
+			<br>
+			<br><B>Série:</B><br>
+				<input type="radio" name="Série" value="S" id="S">
+				<label for="S">S</label><br>
+				<input type="radio" name="Série" value="ES" id="ES">
+				<label for="ES">ES</label><br>
+				<input type="radio" name="Série" value="L" id="L"> 
+				<label for="L">L</label><br>
+				<input type="radio" name="Série" value="Indéterminée" id="Indéterminée"> 
+				<label for="Indéterminée">Indéterminée</label><br>
+				<br>
+				<input type="checkbox" name="Redoublant" id="Redoublant">
+				<label for="Redoublant">Redoublant(e)</label><br>
+		</fieldset>
+		<fieldset>
+			<legend>Orientation</legend>
+			Qu'envisagez-vous pour la suite de vos études ?<br>
+				<table>
+					<tr>
+						<td><input type="checkbox" name="Université" id="Université">
+						<label for="Université">Université</label></td>
+						<td><input type="checkbox" name="BTS" id="BTS">
+						<label for="BTS">BTS</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="IUT" id="IUT">
+						<label for="IUT">IUT</label></td>
+						<td><input type="checkbox" name="Commerce" id="Commerce">
+						<label for="Commerce">École de commerce</label></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="Ingénieur" id="Ingénieur">
+						<label for="Ingénieur">École d'ingénieurs</label><td>
+						<td>&nbsp;</td>
+					</td>
+				</table><br>
+			<label for="commentaires">Commentaires éventuels : </label><br> 
+			<textarea name="commentaires" id="commentaires" rows="10" cols="45" type="text"></textarea>
+		</fieldset>
+	</fieldset><br>
+	<input type="submit" value="Valider vos choix">
+	<input type="reset" value="Remise &agrave; z&eacute;ro">
+	</form>
+</html>
